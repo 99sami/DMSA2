@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>
+      first website  
+    </title>
+  
+    <style> 
+    .row{ 
+      width:720px;
+      margin: 10px auto 10px auto ;
+    }
+    .image-container{
+      display: table-cell; 
+      vertical-align: middle; 
+      padding:20px;
+    }
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script></script>
+ 
+</head>
+
+  <body style="background-color: powderblue">
+    
+    <div class="row">
+
+      <div class="image-container"><img id="a1" src="img/a1.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a2" src="img/a2.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a3" src="img/a3.png" width="200" height="200"/></div> 
+
+    </div>
+    
+    <div>
+
+      <div class="image-container"><img id="a4" src="img/a4.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a5" src="img/a5.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a6" src="img/a6.png" width="200" height="200"/></div> 
+
+    </div>
+
+    <div> 
+
+      <div class="image-container"><img id="a7" src="img/a7.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a8" src="img/a8.png" width="200" height="200"/></div>
+      <div class="image-container"><img id="a9" src="img/a9.png" width="200" height="200"/></div> 
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+  <h1>
+    main heading!
+
+  </h1>
+<h2>
+    this is the subheading 
+
+</h2>
+<p>
+    here is the sentance 
+</p>
+<p>
+    here is another sentance <br> that continues on the next line
+</p>
+
+-->
+
+    <img id="rudeboy" src="img/rudeboy.jpg" onmouseover="this.src='img/keychain.png';" onmouseout="this.src='img/rudeboy.jpg';" width="200" height="200" />
+    <img id="donut_01" src="img/donut.png" width="200" height="200" />
+    <img id="donut2" src="img/donut_01.png" width="200" height="200" />
+    <img id="keychain" src="img/keychain.png" width="200" height="200" /> 
+
+    <script>
+      var sound1 = new buzz.sound("sound/audacity.wav"); 
+      window.onload = function() {  
+        document.getElementById('keychain').addEventListener('mouseover', function () {sound1.play();});
+      }; 
+    </script>
+  </body>
+</html>
